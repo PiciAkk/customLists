@@ -12,5 +12,6 @@ len(myList) # ˙2˙
 myList.elements() # `['someElement', 'anotherElement']`
 type(myList) # `<class 'customLists.customList'>` 
 myList[1] # `someElement`
+myList[1] = 'newElement'
 myList.toList() # `[None, 'someElement', 'anotherElement']`
 ```
