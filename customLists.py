@@ -17,6 +17,8 @@ class customList:
         return self.outputList[self.startsFrom:len(self.outputList)]
     def insert(self, index, element):
         self.outputList.insert(index, element)
+    def pop(self, index):
+        self.outputList.pop(index)
     def append(self, element):
         self.outputList.append(element)
     def __len__(self):
