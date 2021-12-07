@@ -11,6 +11,11 @@ class customList:
             return self.outputList[index]
         else:
             raise Exception("customList index out of range")
+    def __setitem__(self, index, value):
+        if index >= self.startsFrom:
+            self.outputList[index] = value
+        else:
+            raise Exception("customList index out of range")
     def __iter__(self):
         return iter(self.elements())
     def elements(self):
