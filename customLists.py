@@ -11,6 +11,8 @@ class customList:
             return self.outputList[index]
         else:
             raise Exception("customList index out of range")
+    def __iter__(self):
+        return iter(self.elements())
     def elements(self):
         return self.outputList[self.startsFrom:len(self.outputList)]
     def insert(self, index, element):
